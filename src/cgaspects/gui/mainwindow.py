@@ -546,7 +546,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             # Attempt to get the directory from the file dialog
             plotting_csv = QFileDialog.getOpenFileName(
-                self, "Select CSV File", "./", "CSV Files (*.csv);;All Files (*)"
+                self, "Select CSV File", None, "CSV Files (*.csv);;All Files (*)"
             )[0]
 
             # Check if the folder selection was canceled or empty and handle appropriately
